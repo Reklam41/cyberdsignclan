@@ -120,17 +120,16 @@ button:hover:not(:disabled) {
   text-shadow: 0 0.1rem #bcb4b4;
 }
 
-.first-column {
-  background-color: orange;
-}
-
 article {
   position: relative;
   top: 25%;
   left: 190px;
 }
 
-.second-column {
+/*.first-column {
+  background-color: orange;
+}
+ .second-column {
   background-color: blue;
 }
 
@@ -140,11 +139,59 @@ article {
 
 .fourth-column {
   background-color: red;
+} */
+
+.fourth-column div {
+  position: absolute;
+  top: 15%;
+  right: 162px;
+}
+
+.landing-image {
+  position: relative;
+  top: 15%;
 }
 
 .footer {
-  background-color: black;
+  background-color: #f7f7f7;
   color: white;
   height: 604px;
   width: 100vw;
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer .logo {
+  /* background-color: rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer .browse {
+  background-color: green;
+}
+
+.footer .services {
+  background-color: yellow;
+}
+
+.footer .contact {
+  background-color: blue;
+}
+
+.footer-logo {
+  /* background-color: #00ffc8; */
+  margin-bottom: 50px;
+}
+
+.social-icons {
+  /* background-color: #ff8; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
