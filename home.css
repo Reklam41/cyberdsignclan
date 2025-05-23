@@ -1,0 +1,148 @@
+@import url("https://fonts.cdnfonts.com/css/serotiva");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Serotiva", sans-serif;
+  font-size: 1rem;
+}
+
+body {
+  min-height: 100vh;
+  /* background-color: orangered; */
+}
+
+header {
+  display: flex;
+}
+nav {
+  background-color: white;
+  /* box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1); */
+  position: fixed; /* Change from static to fixed */
+  top: 0;
+  left: 0;
+  width: 100%; /* Ensure it spans the full width */
+  z-index: 1000; /* Keeps it above other elements */
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 40px;
+}
+
+nav ul li {
+  height: 50px;
+  position: relative;
+}
+
+nav ul li:first-child {
+  margin-right: auto;
+  margin-left: 150px;
+}
+
+nav ul li:not(:first-child) {
+  right: 150px;
+}
+
+nav ul li a {
+  color: black;
+  text-decoration: none;
+  padding: 0 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul li a:hover {
+  color: #ea1f57;
+  cursor: pointer;
+}
+
+nav ul li:not(:first-child):not(:nth-child(6)) a::after {
+  content: "";
+  height: 5px;
+  width: 0px;
+  background: #0d36cc;
+  box-shadow: 0px 0px 2px black;
+  border-radius: 10px;
+  position: absolute;
+  bottom: -5px;
+  right: 0%;
+  transition: 0.3s ease-in;
+}
+
+nav ul li:not(:first-child) a:hover::after {
+  width: 100%;
+  left: 0%;
+}
+
+nav ul li:nth-child(5) {
+  border: 1px solid #000;
+}
+nav ul li:nth-child(5):hover {
+  background: #0d36cc;
+  color: white;
+}
+
+main {
+  height: 100vh;
+  flex-grow: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+article {
+  position: relative;
+  top: 25%;
+}
+
+button {
+  background-color: #0d36cc;
+  border: none;
+  padding: 1rem;
+  font-size: 1rem;
+  width: 10em;
+  color: #fff;
+  box-shadow: 0 0.4rem #dfd9d9;
+  cursor: pointer;
+}
+
+button:active {
+  color: white;
+  box-shadow: 0 0.2rem #dfd9d9;
+  transform: translateY(0.2rem);
+}
+
+button:hover:not(:disabled) {
+  background: #ea1f57;
+  color: white;
+  text-shadow: 0 0.1rem #bcb4b4;
+}
+
+.first-column {
+  background-color: orange;
+}
+
+.second-column {
+  background-color: blue;
+}
+
+.third-column {
+  background-color: green;
+}
+
+.fourth-column {
+  background-color: red;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 604px;
+  width: 100vw;
+}
