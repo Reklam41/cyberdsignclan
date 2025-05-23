@@ -11,6 +11,7 @@
 body {
   min-height: 100vh;
   /* background-color: orangered; */
+  overflow-x: hidden; /* Hide vertical scrollbar */
 }
 
 header {
@@ -96,11 +97,6 @@ main {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-article {
-  position: relative;
-  top: 25%;
-}
-
 button {
   background-color: #0d36cc;
   border: none;
@@ -126,6 +122,12 @@ button:hover:not(:disabled) {
 
 .first-column {
   background-color: orange;
+}
+
+article {
+  position: relative;
+  top: 25%;
+  left: 190px;
 }
 
 .second-column {
