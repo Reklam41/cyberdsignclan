@@ -165,7 +165,7 @@ main {
 .footer .browse {
   /* background-color: green; */
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   color: #000;
 }
@@ -174,15 +174,21 @@ main {
   margin-bottom: 20px;
 }
 
-/* .browse-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-} */
+.footer .browse a {
+  text-decoration: none;
+  color: #000;
+}
 
 .footer .services {
-  background-color: yellow;
+  /* background-color: yellow; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.footer .services h4 {
+  margin-bottom: 20px;
 }
 
 .footer .contact {
