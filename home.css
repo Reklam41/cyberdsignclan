@@ -151,6 +151,22 @@ main {
   background-color: green;
 }
 
+.third-column .emailhosting {
+  background-color: purple;
+  width: 283px;
+  height: 283px;
+  position: absolute;
+  top: 110%;
+  left: 978px;
+}
+.third-column .emailhosting .emailcontent {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+  text-align: start;
+}
+
 .fourth-column {
   background-color: red;
 }
