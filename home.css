@@ -103,12 +103,19 @@ main {
 }
 
 .first-column .webdesign {
-  background-color: #f7f7f7;
+  background-color: #c29797;
   width: 283px;
   height: 283px;
   position: absolute;
   top: 110%;
   left: 10%;
+}
+.first-column .webdesign .webcontent {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+  text-align: start;
 }
 
 .second-column {
@@ -122,6 +129,22 @@ main {
 }
 .second-column #service h4 {
   color: #ea1f57;
+  margin-bottom: 15px;
+}
+.second-column .graphicdesign {
+  background-color: yellow;
+  width: 283px;
+  height: 283px;
+  position: absolute;
+  top: 110%;
+  left: 560px;
+}
+.second-column .graphicdesign .graphiccontent {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+  transform: translate(-25%, -25%);
+  text-align: start;
 }
 
 .third-column {
@@ -147,6 +170,10 @@ article {
   position: relative;
   top: 25%;
   left: 190px;
+}
+article h1 {
+  color: #ea1f57;
+  margin-bottom: 15px;
 }
 
 button {
