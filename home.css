@@ -14,6 +14,8 @@ body {
   overflow-x: hidden;
 }
 
+/* navigation section */
+
 nav {
   background-color: white;
   margin-top: 40px;
@@ -82,6 +84,71 @@ nav ul li:nth-child(5):hover {
   color: white;
 }
 
+/* hero section */
+
+main {
+  display: flex;
+  height: 100vh;
+  flex-grow: 1;
+}
+
+.grid-container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.first-column {
+  background-color: orange;
+}
+
+.first-column .webdesign {
+  background-color: #f7f7f7;
+  width: 283px;
+  height: 283px;
+  position: absolute;
+  top: 110%;
+  left: 10%;
+}
+
+.second-column {
+  background-color: blue;
+  grid-column: 2 / span 2;
+}
+
+.second-column #service {
+  margin-top: 700px;
+  text-align: center;
+}
+.second-column #service h4 {
+  color: #ea1f57;
+}
+
+.third-column {
+  background-color: green;
+}
+
+.fourth-column {
+  background-color: red;
+}
+
+.fourth-column div {
+  position: absolute;
+  top: 15%;
+  right: 162px;
+}
+
+.landing-image {
+  position: relative;
+  top: 15%;
+}
+
+article {
+  position: relative;
+  top: 25%;
+  left: 190px;
+}
+
 button {
   background-color: #0d36cc;
   border: none;
@@ -105,55 +172,14 @@ button:hover:not(:disabled) {
   text-shadow: 0 0.1rem #bcb4b4;
 }
 
-/* .first-column {
-  background-color: orange;
-}
-.second-column {
-  background-color: blue;
-}
-
-.third-column {
-  background-color: green;
-}
-
-.fourth-column {
-  background-color: red;
-} */
-
-article {
-  position: relative;
-  top: 25%;
-  left: 190px;
-}
-main {
-  height: 100vh;
-  flex-grow: 1;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.fourth-column div {
-  position: absolute;
-  top: 15%;
-  right: 162px;
-}
-
-.landing-image {
-  position: relative;
-  top: 15%;
-}
+/* footer section */
 
 .footer {
   background-color: #f7f7f7;
-  color: white;
-  height: 604px;
+  height: 400px;
   width: 100vw;
-}
-
-.footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  overflow-x: hidden;
 }
 
 .footer .logo {
@@ -243,7 +269,7 @@ main {
 .copyright {
   position: absolute;
   left: 50%;
-  top: 169%;
+  top: 148%;
   transform: translateX(-50%);
   color: #000;
   border-top: 3px solid #d7d7d7;
