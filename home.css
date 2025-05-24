@@ -11,6 +11,7 @@
 body {
   min-height: 100vh;
   /* background-color: orangered; */
+  overflow-x: hidden;
 }
 
 nav {
@@ -152,6 +153,7 @@ main {
 .footer {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
+  overflow-x: hidden;
 }
 
 .footer .logo {
@@ -192,7 +194,38 @@ main {
 }
 
 .footer .contact {
-  background-color: blue;
+  /* background-color: blue; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000;
+}
+
+.mover {
+  position: relative;
+  top: 25px;
+}
+
+/* .footer .contact h4 {
+  margin-bottom: 20px;
+} */
+
+.email {
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+
+.adrress {
+  display: flex;
+  align-items: flex-start;
+  color: #000;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  color: #000;
 }
 
 .footer-logo {
@@ -205,4 +238,16 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.copyright {
+  position: absolute;
+  left: 50%;
+  top: 169%;
+  transform: translateX(-50%);
+  color: #000;
+  border-top: 3px solid #d7d7d7;
+  padding: 10px;
+  text-align: center;
+  width: 85%;
 }
