@@ -97,6 +97,9 @@ nav ul li:nth-child(5):hover {
   margin-left: 190px;
   margin-top: 190px;
 }
+.hero-content h1 {
+  color: #ea1f57;
+}
 
 .hero-image {
   width: 50%;
@@ -129,4 +132,16 @@ button:hover:not(:disabled) {
   background: #ea1f57;
   color: white;
   text-shadow: 0 0.1rem #bcb4b4;
+}
+
+/* services-section */
+
+.services-description {
+  margin: 0 auto;
+  width: 903px;
+  margin-top: 50px;
+  text-align: center;
+}
+.services-description h4 {
+  color: #ea1f57;
 }
